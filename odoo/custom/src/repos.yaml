@@ -1,0 +1,162 @@
+# See https://github.com/Tecnativa/doodba#optodoocustomsrcreposyaml
+./odoo:
+  defaults:
+    # Shallow repositories ($DEPTH_DEFAULT=1) are faster & thinner
+    # You may need a bigger depth when merging PRs (use $DEPTH_MERGE
+    # for a sane value of 100 commits)
+    depth: $DEPTH_DEFAULT
+  remotes:
+    ocb: https://github.com/OCA/OCB.git
+    odoo: https://github.com/odoo/odoo.git
+    openupgrade: https://github.com/OCA/OpenUpgrade.git
+  target: ocb $ODOO_VERSION
+  merges:
+    - ocb $ODOO_VERSION
+    # Example of a merge of the PR with the number <PR>
+    # - oca refs/pull/<PR>/head
+
+# OCA
+
+l10n-brazil:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    escodoo: https://github.com/Escodoo/l10n-brazil
+    origin: https://github.com/OCA/l10n-brazil
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/1887/head # Escodoo:14.0-mig-l10n_br_fiscal_queue
+    - origin refs/pull/1928/head # Escodoo:14.0-fix-l10n_br_nfse-inscr-estadual-isenta
+    - origin refs/pull/2569/head # Escodoo:14.0-add-l10n_br_account_fleet
+    - origin refs/pull/2624/head # Escodoo:14.0-add-l10n_br_purchase_requisition
+    - origin refs/pull/2627/head # Escodoo:14.0-imp-fiscal-message-on-nfse
+    - origin refs/pull/2719/head # Escodoo:14.0-rfc-l10n_br_portal_form_fiels_and_flow
+    - origin refs/pull/2559/head # Engenere:14.0-imp-tax-manual-values
+    #- origin refs/pull/2389/head # Engenere:14.0-POC-PAYMENT-INSTRUMENT
+    - origin refs/pull/2773/head # Escodoo:14.0-add-l10n_br_nfse_focus-escodoo
+    - origin refs/pull/2779/head # Escodoo:14.0-add-l10n_br_account_invoice_merge
+    - origin refs/pull/2845/head # Escodoo:14.0-imp-l10n_br_stock_account-enforce_fiscal_operation_line
+    # - origin refs/pull/2501/head # Engenere:14.0-difal-regulation
+    #- escodoo 14.0-add-l10n_br_sale_mrp # Escodoo:14.0-add-l10n_br_sale_mrp
+    # - escodoo 14.0-mig-l10n_br_mrp # Escodoo:14.0-mig-l10n_br_mrp
+  target: origin merged
+  fetch_all: true
+
+account-financial-tools:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    # origin: https://github.com/OCA/account-financial-tools
+    escodoo: https://github.com/Escodoo/account-financial-tools
+  merges:
+    # - origin $ODOO_VERSION
+    - escodoo 14.0-add-account_asset_management_fleet
+  target: escodoo merged
+  fetch_all: true
+
+account-reconcile:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/account-reconcile
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/459/head # Tecnativa:14.0-account_reconciliation_widget-in_payment
+  target: origin merged
+  fetch_all: true
+
+field-service:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/field-service
+    escodoo: https://github.com/Escodoo/field-service
+  merges:
+    - origin $ODOO_VERSION
+    - escodoo 14.0-mig-fieldservice_rating
+    - escodoo 14.0-add-fieldservice_survey_new
+  target: escodoo merged
+  fetch_all: true
+
+# manufacture:
+#   defaults:
+#     depth: $DEPTH_MERGE
+#   remotes:
+#     origin: https://github.com/OCA/manufacture
+#     escodoo: https://github.com/Escodoo/manufacture
+#   merges:
+#     - origin $ODOO_VERSION
+#     - origin refs/pull/1052/head # Escodoo:14.0-mig-mrp_mto_with_stock
+#   target: origin merged
+#   fetch_all: true
+
+stock-logistics-warehouse:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/stock-logistics-warehouse
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/1886/head # Escodoo:14.0-add-stock_request_purchase_request
+  target: origin merged
+  fetch_all: true
+
+storage:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/storage
+    escodoo: https://github.com/Escodoo/storage
+  merges:
+    - origin $ODOO_VERSION
+    - escodoo 14.0-mig-fs_storage
+    - escodoo 14.0-mig-fs_attachment
+  target: origin merged
+  fetch_all: true
+
+# Escodoo
+
+project-addons:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/Escodoo/project-addons
+  merges:
+    - origin 14.0-add-project-phase-addon
+  target: origin merged
+  fetch_all: true
+
+account-addons:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/Escodoo/account-addons
+  merges:
+    - origin $ODOO_VERSION
+    # - origin refs/pull/62/head # add analytic_restrictions
+    # - origin refs/pull/63/head # add sale_analytic_restrictions
+    # - origin refs/pull/64/head # add hr_timesheet_analytic_restrictions
+  target: origin merged
+  fetch_all: true
+
+server-addons:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/Escodoo/server-addons
+  merges:
+    - origin $ODOO_VERSION
+    - origin 14.0-add-base_ir_binary
+  target: origin merged
+  fetch_all: true
+
+# Clientes
+egd-addons:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/Escodoo/egd-addons
+  merges:
+    - origin $ODOO_VERSION
+  target: origin merged
+  fetch_all: true
