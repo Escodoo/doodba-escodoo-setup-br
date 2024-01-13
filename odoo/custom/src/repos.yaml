@@ -160,3 +160,5 @@ egd-addons:
     - origin $ODOO_VERSION
   target: origin merged
   fetch_all: true
+
+#test2
