@@ -1,0 +1,253 @@
+account-analytic:
+  - "*"
+
+account-budgeting:
+  - "*"
+
+account-closing:
+  - "*"
+
+account-consolidation:
+  - "*"
+
+account-financial-reporting:
+  - "*"
+
+account-financial-tools:
+  - "*"
+
+account-invoice-reporting:
+  - "*"
+
+account-invoicing:
+  - "*"
+
+account-payment:
+  - "*"
+
+account-reconcile:
+  - "*"
+
+bank-payment:
+  - "*"
+
+bank-statement-import:
+  - "*"
+
+brand:
+  - "*"
+
+commission:
+  - "*"
+
+connector:
+  - "*"
+
+contract:
+  - "*"
+
+crm:
+  - "*"
+
+currency:
+  - "*"
+
+delivery-carrier:
+  - "*"
+
+dms:
+  - "*"
+
+e-commerce:
+  - "*"
+
+field-service:
+  - "*"
+
+fleet:
+  - "*"
+
+geospatial:
+  - "*"
+
+helpdesk:
+  - "*"
+
+hr:
+  - "*"
+
+hr-expense:
+  - "*"
+
+knowledge:
+  - "*"
+
+l10n-brazil:
+  - "*"
+
+maintenance:
+  - "*"
+
+management-system:
+  - "*"
+
+manufacture:
+  - "*"
+
+mis-builder:
+  - "*"
+
+mis-builder-contrib:
+  - "*"
+
+payroll:
+  - "*"
+
+partner-contact:
+  - "*"
+
+product-attribute:
+  - "*"
+
+product-variant:
+  - "*"
+
+project:
+  - "*"
+
+project-reporting:
+  - "*"
+
+purchase-workflow:
+  - "*"
+
+purchase-reporting:
+  - "*"
+
+queue:
+  - "*"
+
+reporting-engine:
+  - "*"
+
+rest-framework:
+  - "*"
+
+sale-reporting:
+  - "*"
+
+sale-workflow:
+  - "*"
+
+server-auth:
+  - "*"
+
+server-backend:
+  - "*"
+
+server-brand:
+  - "*"
+
+server-env:
+  - "*"
+
+server-tools:
+  - "*"
+
+server-ux:
+  - "*"
+
+sign:
+  - "*"
+
+social:
+  - "*"
+
+stock-logistics-warehouse:
+  - "*"
+
+stock-logistics-workflow:
+  - "*"
+
+stock-logistics-reporting:
+  - "*"
+
+storage:
+  - "*"
+
+survey:
+  - "*"
+
+timesheet:
+  - "*"
+
+web:
+  - "*"
+
+website:
+  - "*"
+
+---
+# ATSTI Repositories
+ENV:
+  DEFAULT_REPO_PATTERN: https://github.com/ATSTI/{}.git
+ats-odoo:
+  - l10n_br_sped_efd_contribuicoes
+  - l10n_br_sped_efd_icms_ipi
+
+---
+# Engenere Repositories
+ENV:
+  DEFAULT_REPO_PATTERN: https://github.com/engenere/{}.git
+engenere-addons:
+  - engenere_danfe
+  - l10n_br_base_allows_duplicate_cnpj_ie
+  - l10n_br_nfse_paulistana_direct_print
+
+---
+# Akretion Repositories
+ENV:
+  DEFAULT_REPO_PATTERN: https://github.com/akretion/{}.git
+account-move-import:
+  - "*"
+
+---
+# Odoo Repositories
+ENV:
+  DEFAULT_REPO_PATTERN: https://github.com/odoo/{}.git
+design-themes:
+  - "*"
+
+# ---
+# # Camptocamp Repositories
+# ENV:
+#   DEFAULT_REPO_PATTERN: https://github.com/camptocamp/{}.git
+# odoo-cloud-platform:
+#   - "*"
+
+---
+# Escodoo Repositories
+ENV:
+  DEFAULT_REPO_PATTERN: https://github.com/escodoo/{}.git
+account-addons:
+  - "*"
+base-addons:
+  - "*"
+crm-addons:
+  - "*"
+purchase-addons:
+  - "*"
+sale-addons:
+  - "*"
+project-addons:
+  - "*"
+server-addons:
+  - "*"
+
+# Escodoo Customer Repositories
+escodoo-addons:
+  - "*"
+egd-addons:
+  - "*"
+poppi-addons:
+  - "*"
