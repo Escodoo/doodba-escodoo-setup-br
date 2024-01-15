@@ -1,6 +1,5 @@
 git+https://github.com/OCA/openupgradelib.git@master
 unicodecsv
-unidecode
 
 #l10n-brazil
 brazilcep
@@ -99,7 +98,6 @@ cachetools
 s3fs>=0.5
 fsspec[abfs]
 
+# others - verificar
 python_slugify
 validators
-
-#teste2
