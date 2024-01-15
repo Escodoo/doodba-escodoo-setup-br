@@ -115,16 +115,6 @@ storage:
 
 # Escodoo
 
-project-addons:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/Escodoo/project-addons
-  merges:
-    - origin 14.0-add-project-phase-addon
-  target: origin merged
-  fetch_all: true
-
 account-addons:
   defaults:
     depth: $DEPTH_MERGE
@@ -138,6 +128,16 @@ account-addons:
   target: origin merged
   fetch_all: true
 
+project-addons:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/Escodoo/project-addons
+  merges:
+    - origin 14.0-add-project-phase-addon
+  target: origin merged
+  fetch_all: true
+  
 server-addons:
   defaults:
     depth: $DEPTH_MERGE
@@ -148,16 +148,3 @@ server-addons:
     - origin 14.0-add-base_ir_binary
   target: origin merged
   fetch_all: true
-
-# Clientes
-egd-addons:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/Escodoo/egd-addons
-  merges:
-    - origin $ODOO_VERSION
-  target: origin merged
-  fetch_all: true
-
-#test2
