@@ -30,7 +30,6 @@ psycopg2-binary
 git+https://github.com/ATSTI/python-sped
 xmldiff
 ofx
-dateutil
 
 # account-financial-tools
 numpy-financial<=1.0.0
