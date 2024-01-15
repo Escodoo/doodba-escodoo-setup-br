@@ -218,13 +218,6 @@ ENV:
 design-themes:
   - "*"
 
-# ---
-# # Camptocamp Repositories
-# ENV:
-#   DEFAULT_REPO_PATTERN: https://github.com/camptocamp/{}.git
-# odoo-cloud-platform:
-#   - "*"
-
 ---
 # Escodoo Repositories
 ENV:
@@ -241,13 +234,7 @@ sale-addons:
   - "*"
 project-addons:
   - "*"
+server-addons:
+  - "*"
 setup-addons:
-  - "*"
-  
-# Escodoo Customer Repositories
-escodoo-addons:
-  - "*"
-egd-addons:
-  - "*"
-poppi-addons:
   - "*"
