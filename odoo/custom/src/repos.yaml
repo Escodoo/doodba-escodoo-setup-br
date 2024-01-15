@@ -30,7 +30,6 @@ l10n-brazil:
     - origin refs/pull/2569/head # Escodoo:14.0-add-l10n_br_account_fleet
     - origin refs/pull/2624/head # Escodoo:14.0-add-l10n_br_purchase_requisition
     - origin refs/pull/2627/head # Escodoo:14.0-imp-fiscal-message-on-nfse
-    - origin refs/pull/2719/head # Escodoo:14.0-rfc-l10n_br_portal_form_fiels_and_flow
     - origin refs/pull/2559/head # Engenere:14.0-imp-tax-manual-values
     #- origin refs/pull/2389/head # Engenere:14.0-POC-PAYMENT-INSTRUMENT
     - origin refs/pull/2773/head # Escodoo:14.0-add-l10n_br_nfse_focus-escodoo
