@@ -89,16 +89,16 @@ field-service:
 #   target: origin merged
 #   fetch_all: true
 
-# stock-logistics-warehouse:
-#   defaults:
-#     depth: $DEPTH_MERGE
-#   remotes:
-#     origin: https://github.com/OCA/stock-logistics-warehouse
-#   merges:
-#     - origin $ODOO_VERSION
-#     - origin refs/pull/1886/head # Escodoo:14.0-add-stock_request_purchase_request
-#   target: origin merged
-#   fetch_all: true
+stock-logistics-warehouse:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/stock-logistics-warehouse
+  merges:
+    # - origin $ODOO_VERSION
+    - origin refs/pull/1886/head # Escodoo:14.0-add-stock_request_purchase_request
+  target: origin merged
+  fetch_all: true
 
 storage:
   defaults:
