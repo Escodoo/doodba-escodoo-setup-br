@@ -1,3 +1,2 @@
 [options]
-; Configuration file template that will be expanded on build
 brcobranca_api_url = http://boleto_cnab_api:9292
