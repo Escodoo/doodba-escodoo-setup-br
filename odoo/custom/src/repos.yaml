@@ -72,16 +72,16 @@ field-service:
   target: escodoo merged
   fetch_all: true
 
-server-auth:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/OCA/server-auth
-  merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/606/head # Escodoo:14.0-imp-auth_admin_passkey
-  target: origin merged
-  fetch_all: true
+# server-auth:
+#   defaults:
+#     depth: $DEPTH_MERGE
+#   remotes:
+#     origin: https://github.com/OCA/server-auth
+#   merges:
+#     - origin $ODOO_VERSION
+#     - origin refs/pull/606/head # Escodoo:14.0-imp-auth_admin_passkey
+#   target: origin merged
+#   fetch_all: true
 
 stock-logistics-warehouse:
   defaults:
