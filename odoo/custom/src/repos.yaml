@@ -31,13 +31,9 @@ l10n-brazil:
     - origin refs/pull/2624/head # Escodoo:14.0-add-l10n_br_purchase_requisition
     - origin refs/pull/2627/head # Escodoo:14.0-imp-fiscal-message-on-nfse
     - origin refs/pull/2559/head # Engenere:14.0-imp-tax-manual-values
-    #- origin refs/pull/2389/head # Engenere:14.0-POC-PAYMENT-INSTRUMENT
     - origin refs/pull/2773/head # Escodoo:14.0-add-l10n_br_nfse_focus-escodoo
     - origin refs/pull/2779/head # Escodoo:14.0-add-l10n_br_account_invoice_merge
     - origin refs/pull/2845/head # Escodoo:14.0-imp-l10n_br_stock_account-enforce_fiscal_operation_line
-    # - origin refs/pull/2501/head # Engenere:14.0-difal-regulation
-    #- escodoo 14.0-add-l10n_br_sale_mrp # Escodoo:14.0-add-l10n_br_sale_mrp
-    # - escodoo 14.0-mig-l10n_br_mrp # Escodoo:14.0-mig-l10n_br_mrp
   target: origin merged
   fetch_all: true
 
@@ -45,12 +41,11 @@ account-financial-tools:
   defaults:
     depth: $DEPTH_MERGE
   remotes:
-    # origin: https://github.com/OCA/account-financial-tools
-    escodoo: https://github.com/Escodoo/account-financial-tools
+    origin: https://github.com/OCA/account-financial-tools
   merges:
-    # - origin $ODOO_VERSION
-    - escodoo 14.0-add-account_asset_management_fleet
-  target: escodoo merged
+    - origin $ODOO_VERSION
+    - origin refs/pull/1802/head # Escodoo:14.0-add-account_asset_management_fleet
+  target: origin merged
   fetch_all: true
 
 account-reconcile:
@@ -77,17 +72,16 @@ field-service:
   target: escodoo merged
   fetch_all: true
 
-# manufacture:
-#   defaults:
-#     depth: $DEPTH_MERGE
-#   remotes:
-#     origin: https://github.com/OCA/manufacture
-#     escodoo: https://github.com/Escodoo/manufacture
-#   merges:
-#     - origin $ODOO_VERSION
-#     - origin refs/pull/1052/head # Escodoo:14.0-mig-mrp_mto_with_stock
-#   target: origin merged
-#   fetch_all: true
+server-auth:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/server-auth
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/606/head # Escodoo:14.0-imp-auth_admin_passkey
+  target: origin merged
+  fetch_all: true
 
 stock-logistics-warehouse:
   defaults:
@@ -95,8 +89,8 @@ stock-logistics-warehouse:
   remotes:
     origin: https://github.com/OCA/stock-logistics-warehouse
   merges:
-    # - origin $ODOO_VERSION
-    - origin refs/pull/1886/head # Escodoo:14.0-add-stock_request_purchase_request
+    - origin $ODOO_VERSION
+    # - origin refs/pull/1886/head # Escodoo:14.0-add-stock_request_purchase_request
   target: origin merged
   fetch_all: true
 
@@ -110,7 +104,7 @@ storage:
     - origin $ODOO_VERSION
     - escodoo 14.0-mig-fs_storage
     - escodoo 14.0-mig-fs_attachment
-  target: origin merged
+  target: escodoo merged
   fetch_all: true
 
 # Escodoo
@@ -128,16 +122,6 @@ account-addons:
   target: origin merged
   fetch_all: true
 
-project-addons:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/Escodoo/project-addons
-  merges:
-    - origin 14.0-add-project-phase-addon
-  target: origin merged
-  fetch_all: true
-  
 server-addons:
   defaults:
     depth: $DEPTH_MERGE
