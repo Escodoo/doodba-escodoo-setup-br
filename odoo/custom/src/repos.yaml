@@ -7,14 +7,13 @@
     depth: $DEPTH_DEFAULT
   remotes:
     ocb: https://github.com/OCA/OCB.git
-    odoo: https://github.com/odoo/odoo.git
-    openupgrade: https://github.com/OCA/OpenUpgrade.git
+    #odoo: https://github.com/odoo/odoo.git
+    #openupgrade: https://github.com/OCA/OpenUpgrade.git
     escodoo: https://github.com/Escodoo/OCB.git
-  target: escodoo $ODOO_VERSION
+  target: escodoo odoo_online
   merges:
-    - ocb $ODOO_VERSION
+    #- ocb $ODOO_VERSION
     - escodoo 14.0-odoo-online # [HCK] base: Implement workaround for module dependency issue
-  fetch_all: true
 
 l10n-brazil:
   defaults:
@@ -34,19 +33,17 @@ l10n-brazil:
     - origin refs/pull/2779/head # Escodoo:14.0-add-l10n_br_account_invoice_merge
     - origin refs/pull/2845/head # Escodoo:14.0-imp-l10n_br_stock_account-enforce_fiscal_operation_line
   target: origin merged
-  fetch_all: true
 
 account-financial-tools:
   defaults:
     depth: $DEPTH_MERGE
   remotes:
-    # origin: https://github.com/OCA/account-financial-tools
+    origin: https://github.com/OCA/account-financial-tools
     escodoo: https://github.com/Escodoo/account-financial-tools
   merges:
-    # - origin $ODOO_VERSION
+    - origin $ODOO_VERSION
     - escodoo 14.0-add-account_asset_management_fleet
   target: escodoo merged
-  fetch_all: true
 
 account-reconcile:
   defaults:
@@ -57,5 +54,3 @@ account-reconcile:
     - origin $ODOO_VERSION
     - origin refs/pull/459/head # Tecnativa:14.0-account_reconciliation_widget-in_payment
   target: origin merged
-  fetch_all: true
-  
