@@ -9,13 +9,13 @@
     ocb: https://github.com/OCA/OCB.git
     odoo: https://github.com/odoo/odoo.git
     openupgrade: https://github.com/OCA/OpenUpgrade.git
+    escodoo: https://github.com/Escodoo/OCB
   target: ocb $ODOO_VERSION
   merges:
     - ocb $ODOO_VERSION
+    - escodoo 14.0-odoo-online
     # Example of a merge of the PR with the number <PR>
     # - oca refs/pull/<PR>/head
-
-# OCA
 
 l10n-brazil:
   defaults:
@@ -41,11 +41,12 @@ account-financial-tools:
   defaults:
     depth: $DEPTH_MERGE
   remotes:
-    origin: https://github.com/OCA/account-financial-tools
+    # origin: https://github.com/OCA/account-financial-tools
+    escodoo: https://github.com/Escodoo/account-financial-tools
   merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/1802/head # Escodoo:14.0-add-account_asset_management_fleet
-  target: origin merged
+    # - origin $ODOO_VERSION
+    - escodoo 14.0-add-account_asset_management_fleet
+  target: escodoo merged
   fetch_all: true
 
 account-reconcile:
@@ -56,79 +57,5 @@ account-reconcile:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/459/head # Tecnativa:14.0-account_reconciliation_widget-in_payment
-  target: origin merged
-  fetch_all: true
-
-field-service:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/OCA/field-service
-    escodoo: https://github.com/Escodoo/field-service
-  merges:
-    - origin $ODOO_VERSION
-    - escodoo 14.0-mig-fieldservice_rating
-    - escodoo 14.0-add-fieldservice_survey_new
-  target: escodoo merged
-  fetch_all: true
-
-# server-auth:
-#   defaults:
-#     depth: $DEPTH_MERGE
-#   remotes:
-#     origin: https://github.com/OCA/server-auth
-#   merges:
-#     - origin $ODOO_VERSION
-#     - origin refs/pull/606/head # Escodoo:14.0-imp-auth_admin_passkey
-#   target: origin merged
-#   fetch_all: true
-
-stock-logistics-warehouse:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/OCA/stock-logistics-warehouse
-  merges:
-    - origin $ODOO_VERSION
-    # - origin refs/pull/1886/head # Escodoo:14.0-add-stock_request_purchase_request
-  target: origin merged
-  fetch_all: true
-
-storage:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/OCA/storage
-    escodoo: https://github.com/Escodoo/storage
-  merges:
-    - origin $ODOO_VERSION
-    - escodoo 14.0-mig-fs_storage
-    - escodoo 14.0-mig-fs_attachment
-  target: escodoo merged
-  fetch_all: true
-
-# Escodoo
-
-account-addons:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/Escodoo/account-addons
-  merges:
-    - origin $ODOO_VERSION
-    # - origin refs/pull/62/head # add analytic_restrictions
-    # - origin refs/pull/63/head # add sale_analytic_restrictions
-    # - origin refs/pull/64/head # add hr_timesheet_analytic_restrictions
-  target: origin merged
-  fetch_all: true
-
-server-addons:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/Escodoo/server-addons
-  merges:
-    - origin $ODOO_VERSION
-    - origin 14.0-add-base_ir_binary
   target: origin merged
   fetch_all: true
