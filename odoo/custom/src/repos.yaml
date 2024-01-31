@@ -14,6 +14,7 @@
   merges:
     - ocb $ODOO_VERSION
     - escodoo 14.0-odoo-online # [HCK] base: Implement workaround for module dependency issue
+  fetch_all: true
 
 l10n-brazil:
   defaults:
