@@ -9,13 +9,11 @@
     ocb: https://github.com/OCA/OCB.git
     odoo: https://github.com/odoo/odoo.git
     openupgrade: https://github.com/OCA/OpenUpgrade.git
-    escodoo: https://github.com/Escodoo/OCB
+    escodoo: https://github.com/Escodoo/OCB.git
   target: ocb $ODOO_VERSION
   merges:
     - ocb $ODOO_VERSION
-    - escodoo 14.0-odoo-online
-    # Example of a merge of the PR with the number <PR>
-    # - oca refs/pull/<PR>/head
+    - escodoo 14.0-odoo-online # [HCK] base: Implement workaround for module dependency issue
 
 l10n-brazil:
   defaults:
