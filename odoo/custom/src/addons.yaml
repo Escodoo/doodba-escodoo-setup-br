@@ -187,22 +187,22 @@ web:
 website:
   - "*"
 
----
-# ATSTI Repositories
-ENV:
-  DEFAULT_REPO_PATTERN: https://github.com/ATSTI/{}.git
-ats-odoo:
-  - l10n_br_sped_efd_contribuicoes
-  - l10n_br_sped_efd_icms_ipi
+# ---
+# # ATSTI Repositories
+# ENV:
+#   DEFAULT_REPO_PATTERN: https://github.com/ATSTI/{}.git
+# ats-odoo:
+#   - l10n_br_sped_efd_contribuicoes
+#   - l10n_br_sped_efd_icms_ipi
 
----
-# Engenere Repositories
-ENV:
-  DEFAULT_REPO_PATTERN: https://github.com/engenere/{}.git
-engenere-addons:
-  - engenere_danfe
-  - l10n_br_base_allows_duplicate_cnpj_ie
-  - l10n_br_nfse_paulistana_direct_print
+# ---
+# # Engenere Repositories
+# ENV:
+#   DEFAULT_REPO_PATTERN: https://github.com/engenere/{}.git
+# engenere-addons:
+#   - engenere_danfe
+#   - l10n_br_base_allows_duplicate_cnpj_ie
+#   - l10n_br_nfse_paulistana_direct_print
 
 ---
 # Akretion Repositories
@@ -218,23 +218,23 @@ ENV:
 design-themes:
   - "*"
 
----
-# Escodoo Repositories
-ENV:
-  DEFAULT_REPO_PATTERN: https://github.com/escodoo/{}.git
-account-addons:
-  - "*"
-base-addons:
-  - "*"
-crm-addons:
-  - "*"
-purchase-addons:
-  - "*"
-sale-addons:
-  - "*"
-project-addons:
-  - "*"
-server-addons:
-  - "*"
-setup-addons:
-  - "*"
+# ---
+# # Escodoo Repositories
+# ENV:
+#   DEFAULT_REPO_PATTERN: https://github.com/escodoo/{}.git
+# account-addons:
+#   - "*"
+# base-addons:
+#   - "*"
+# crm-addons:
+#   - "*"
+# purchase-addons:
+#   - "*"
+# sale-addons:
+#   - "*"
+# project-addons:
+#   - "*"
+# server-addons:
+#   - "*"
+# setup-addons:
+#   - "*"
