@@ -25,7 +25,6 @@ l10n-brazil:
     origin: https://github.com/OCA/l10n-brazil
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/2805/head # akretion:16.0-mig-l10n_br_fiscal
     - origin refs/pull/2865/head # akretion:16.0-mig-l10n_br_account
     # - origin refs/pull/2879/head # akretion:16.0-mig-l10n_br_fiscal_certificate
     # - origin refs/pull/2880/head # akretion:16.0-mig-l10n_br_nfe_spec
