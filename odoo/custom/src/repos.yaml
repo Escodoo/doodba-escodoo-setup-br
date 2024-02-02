@@ -27,12 +27,10 @@ l10n-brazil:
     - origin $ODOO_VERSION
     - escodoo 16.0-mig-l10n_br_fiscal-without-tax-update
     - origin refs/pull/2865/head # akretion:16.0-mig-l10n_br_account
-    - origin refs/pull/2853/head # Escodoo:16.0-fix-l10n_br_coa-wh-factor_percent
-    - origin refs/pull/2879/head # akretion:16.0-mig-l10n_br_fiscal_certificate
-    - origin refs/pull/2880/head # akretion:16.0-mig-l10n_br_nfe_spec
-    - origin refs/pull/2881/head # akretion:16.0-mig-l10n_br_fiscal_dfe
-    - origin refs/pull/2882/head # akretion:16.0-mig-spec_driven_model
-    - origin refs/pull/2898/head # akretion:16.0-crm-port   
+    # - origin refs/pull/2879/head # akretion:16.0-mig-l10n_br_fiscal_certificate
+    # - origin refs/pull/2880/head # akretion:16.0-mig-l10n_br_nfe_spec
+    # - origin refs/pull/2881/head # akretion:16.0-mig-l10n_br_fiscal_dfe
+    # - origin refs/pull/2882/head # akretion:16.0-mig-spec_driven_model
   target: origin merged
   fetch_all: true
 
