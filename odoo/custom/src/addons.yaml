@@ -218,10 +218,10 @@ ENV:
 design-themes:
   - "*"
 
-# ---
-# # Escodoo Repositories
-# ENV:
-#   DEFAULT_REPO_PATTERN: https://github.com/escodoo/{}.git
+---
+# Escodoo Repositories
+ENV:
+  DEFAULT_REPO_PATTERN: https://github.com/escodoo/{}.git
 # account-addons:
 #   - "*"
 base-addons:
