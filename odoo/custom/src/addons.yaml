@@ -224,8 +224,8 @@ design-themes:
 #   DEFAULT_REPO_PATTERN: https://github.com/escodoo/{}.git
 # account-addons:
 #   - "*"
-# base-addons:
-#   - "*"
+base-addons:
+  - "*"
 # crm-addons:
 #   - "*"
 # purchase-addons:
@@ -236,5 +236,5 @@ design-themes:
 #   - "*"
 # server-addons:
 #   - "*"
-# setup-addons:
-#   - "*"
+setup-addons:
+  - "*"
