@@ -19,13 +19,13 @@
 
 l10n-brazil:
   defaults:
-    depth: $DEPTH_MERGE
+    depth: 2000
   remotes:
     escodoo: https://github.com/Escodoo/l10n-brazil
     origin: https://github.com/OCA/l10n-brazil
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/2805/head # akretion:16.0-mig-l10n_br_fiscal
+    - escodoo 16.0-mig-l10n_br_fiscal-without-tax-update
     - origin refs/pull/2865/head # akretion:16.0-mig-l10n_br_account
     - origin refs/pull/2853/head # Escodoo:16.0-fix-l10n_br_coa-wh-factor_percent
     - origin refs/pull/2879/head # akretion:16.0-mig-l10n_br_fiscal_certificate
