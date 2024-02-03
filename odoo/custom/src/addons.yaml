@@ -172,7 +172,6 @@ server-brand:
 
 server-tools:
   - base_view_inheritance_extension
-  - session_db
   - sql_request_abstract
 
 server-ux:
