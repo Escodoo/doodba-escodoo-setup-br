@@ -129,7 +129,7 @@ l10n-brazil:
 #   target: origin merged
 #   fetch_all: true
 
-server-addons:
+setup-addons:
   defaults:
     depth: $DEPTH_MERGE
   remotes:
