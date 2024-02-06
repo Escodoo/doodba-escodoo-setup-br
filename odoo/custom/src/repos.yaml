@@ -128,3 +128,14 @@ l10n-brazil:
 #     - origin 14.0-add-base_ir_binary
 #   target: origin merged
 #   fetch_all: true
+
+server-addons:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/Escodoo/setup-addons
+  merges:
+    - origin $ODOO_VERSION
+    - origin 16.0-access-control
+  target: origin merged
+  fetch_all: true
