@@ -66,6 +66,6 @@ setup-addons:
     origin: https://github.com/Escodoo/setup-addons
   merges:
     - origin $ODOO_VERSION
-    - origin 16.0-access-control
+    - origin 14.0-access-control
   target: origin merged
   fetch_all: true
