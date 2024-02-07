@@ -24,6 +24,7 @@ account-financial-tools:
   - account_menu
   - account_move_line_menu
   - account_move_template
+  - account_usability
 
 account-invoice-reporting:
   - "*"
