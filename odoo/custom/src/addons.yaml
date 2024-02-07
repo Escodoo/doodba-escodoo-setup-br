@@ -209,7 +209,24 @@ engenere-addons:
 ENV:
   DEFAULT_REPO_PATTERN: https://github.com/akretion/{}.git
 account-move-import:
-  - "*"
+  - account_move_csv_import
+
+---
+# ITPP Labs
+ENV:
+  DEFAULT_REPO_PATTERN: https://github.com/itpp-labs/{}.git
+access-addons:
+  - access_restricted
+  - access_apps
+  - ir_rule_protected
+
+---
+# camptocamp
+ENV:
+  DEFAULT_REPO_PATTERN: https://github.com/camptocamp/{}.git
+odoo-cloud-platform:
+  - logging_json
+  - session_redis
 
 ---
 # Odoo Repositories
