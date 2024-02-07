@@ -11,37 +11,60 @@ account-consolidation:
   - "*"
 
 account-financial-reporting:
-  - "*"
+  - account_financial_report
+  - mis_builder_cash_flow
+  - mis_template_financial_report
 
 account-financial-tools:
-  - "*"
+  - account_asset_management
+  - account_asset_management_fleet
+  - account_asset_management_menu
+  - account_lock_date_update
+  - account_lock_to_date
+  - account_menu
+  - account_move_line_menu
+  - account_move_template
 
 account-invoice-reporting:
   - "*"
 
 account-invoicing:
-  - "*"
+  - account_move_tier_validation
+  - account_move_tier_validation_approver
+  - account_move_tier_validation_forward
+  - stock_picking_invoicing
 
 account-payment:
-  - "*"
+  - account_due_list
+  - account_due_list_payment_mode
+  - account_payment_paired_internal_transfer
 
 account-reconcile:
-  - "*"
+  - account_move_base_import
+  - account_reconciliation_widget
 
 bank-payment:
-  - "*"
+  - account_payment_mode
+  - account_payment_partner
+  - account_payment_purchase
+  - account_payment_purchase_stock
+  - account_payment_sale
 
 bank-statement-import:
-  - "*"
+  - account_statement_import
+  - account_statement_import_base
+  - account_statement_import_file_reconciliation_widget
+  - account_statement_import_ofx
+  - account_statement_import_ofx_by_acctid
 
-brand:
-  - "*"
+# brand:
+#   - "*"
 
 commission:
   - "*"
 
-connector:
-  - "*"
+# connector:
+#   - "*"
 
 contract:
   - "*"
@@ -50,13 +73,13 @@ crm:
   - "*"
 
 currency:
-  - "*"
+  - currency_rate_update
 
 delivery-carrier:
-  - "*"
+  - delivery_carrier_partner
 
-dms:
-  - "*"
+# dms:
+#   - "*"
 
 e-commerce:
   - "*"
@@ -74,10 +97,22 @@ helpdesk:
   - "*"
 
 hr:
-  - "*"
+  - gamification_badge_report
+  - hr_contract_document
+  - hr_contract_type
+  - hr_course
+  - hr_employee_age
+  - hr_employee_document
+  - hr_employee_medical_examination
+  - hr_employee_ppe
+  - hr_personal_equipment_request
+  - hr_personal_equipment_request_tier_validation
+  - hr_personal_equipment_stock
 
 hr-expense:
-  - "*"
+  - hr_expense_advance_clearing
+  - hr_expense_invoice
+  - hr_expense_journal
 
 knowledge:
   - "*"
@@ -106,11 +141,11 @@ payroll:
 partner-contact:
   - "*"
 
-product-attribute:
-  - "*"
+# product-attribute:
+#   - "*"
 
-product-variant:
-  - "*"
+# product-variant:
+#   - "*"
 
 project:
   - "*"
@@ -119,7 +154,12 @@ project-reporting:
   - "*"
 
 purchase-workflow:
-  - "*"
+  - purchase_default_terms_conditions
+  - purchase_order_line_menu
+  - purchase_order_line_stock_available
+  - purchase_report_menu_move
+  - purchase_stock_tier_validation
+  - purchase_tier_validation
 
 purchase-reporting:
   - "*"
@@ -128,34 +168,47 @@ queue:
   - "*"
 
 reporting-engine:
-  - "*"
+  - bi_sql_editor
+  - report_xlsx
+  - report_xlsx_helper
 
-rest-framework:
-  - "*"
+# rest-framework:
+#   - "*"
 
 sale-reporting:
   - "*"
 
 sale-workflow:
-  - "*"
+  - sale_tier_validation
+  - sale_transaction_form_link
 
 server-auth:
-  - "*"
+  - auth_admin_passkey
 
-server-backend:
-  - "*"
+# server-backend:
+#   - "*"
+
+# server-brand:
+#   - "*"
 
 server-brand:
-  - "*"
+  - disable_odoo_online
+  - hr_expense_remove_mobile_link
+  - remove_odoo_enterprise
 
-server-env:
-  - "*"
+# server-env:
+#   - "*"
 
 server-tools:
-  - "*"
+  - base_view_inheritance_extension
+  - sql_request_abstract
 
 server-ux:
-  - "*"
+  - base_technical_features
+  - base_tier_validation
+  - base_tier_validation_forward
+  - date_range
+  - date_range_account
 
 sign:
   - "*"
@@ -164,16 +217,17 @@ social:
   - "*"
 
 stock-logistics-warehouse:
-  - "*"
+  - scrap_reason_code
 
 stock-logistics-workflow:
-  - "*"
+  - stock_picking_invoice_link
+  - stock_picking_tier_validation
 
 stock-logistics-reporting:
   - "*"
 
-storage:
-  - "*"
+# storage:
+#   - "*"
 
 survey:
   - "*"
@@ -182,7 +236,10 @@ timesheet:
   - "*"
 
 web:
-  - "*"
+  - web_pwa_oca
+  - web_responsive
+  - web_advanced_search
+  - web_widget_x2many_2d_matrix
 
 website:
   - "*"
