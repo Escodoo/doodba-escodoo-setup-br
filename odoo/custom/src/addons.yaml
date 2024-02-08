@@ -172,6 +172,7 @@ reporting-engine:
   - bi_sql_editor
   - report_xlsx
   - report_xlsx_helper
+  - sql_request_abstract
 
 # rest-framework:
 #   - "*"
