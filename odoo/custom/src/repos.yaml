@@ -77,3 +77,15 @@ server-ux:
     - escodoo refs/pull/2/head # BASE_TIER_VALIDATION REMOVE RAISE AND SET PASS (PROCESS MIGRATION SCRIPT)
   target: escodoo merged
   fetch_all: true
+
+manufacture:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/manufacture
+    escodoo: https://github.com/Escodoo/manufacture
+  merges:
+    - origin $ODOO_VERSION
+    - escodoo 14.0-mig-quality_control_team_oca # Escodoo:14.0-mig-quality_control_team_oca
+  target: origin merged
+  fetch_all: true
