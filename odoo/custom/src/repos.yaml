@@ -14,7 +14,7 @@
   merges:
     - ocb $ODOO_VERSION
     - escodoo refs/pull/1/head # WEBSITE_SLIDES REMOVE PT_BR TRANSLATIONS
-    - escodoo refs/pull/2/head # ACCOUNT SET PASS IN MODEL (PROCESS MIGRATION SCRIPT)
+    # - escodoo refs/pull/2/head # ACCOUNT SET PASS IN MODEL (PROCESS MIGRATION SCRIPT)
 field-service:
   defaults:
     depth: $DEPTH_MERGE
@@ -48,7 +48,7 @@ l10n-brazil:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/2429/head # L10N_BR_HR_CONTRACT
-    - escodoo refs/pull/57/head # REMOVE DUPLICATE CSV LINES IN L10N BR FISCAL (PROCESS MIGRATION SCRIPT)
+    # - escodoo refs/pull/57/head # REMOVE DUPLICATE CSV LINES IN L10N BR FISCAL (PROCESS MIGRATION SCRIPT)
   target: origin merged
   fetch_all: true
 
@@ -60,8 +60,8 @@ odoo-usability:
     escodoo: https://github.com/Escodoo/odoo-usability
   merges:
     - origin $ODOO_VERSION
-    - escodoo refs/pull/1/head # ACCOUNT_USABILITY REMOVE SCRIPT MIGRATION TO IGNORE CONFLICT (PROCESS MIGRATION SCRIPT)
-    - escodoo refs/pull/2/head # PRODUCT_USABILITY SCRIPT TO REMOVE PRODUCT_REL NOT FOUND IN PRODUCT AND PRODUCT_TEMPLATE (PROCESS MIGRATION SCRIPT)
+    # - escodoo refs/pull/1/head # ACCOUNT_USABILITY REMOVE SCRIPT MIGRATION TO IGNORE CONFLICT (PROCESS MIGRATION SCRIPT)
+    # - escodoo refs/pull/2/head # PRODUCT_USABILITY SCRIPT TO REMOVE PRODUCT_REL NOT FOUND IN PRODUCT AND PRODUCT_TEMPLATE (PROCESS MIGRATION SCRIPT)
     - escodoo refs/pull/3/head # SALE_USABILITY DISABLE ERROR CLIENT_ORDER_REF
   target: escodoo merged
   fetch_all: true
@@ -74,7 +74,7 @@ server-ux:
     escodoo: https://github.com/Escodoo/server-ux
   merges:
     - origin $ODOO_VERSION
-    - escodoo refs/pull/2/head # BASE_TIER_VALIDATION REMOVE RAISE AND SET PASS (PROCESS MIGRATION SCRIPT)
+    # - escodoo refs/pull/2/head # BASE_TIER_VALIDATION REMOVE RAISE AND SET PASS (PROCESS MIGRATION SCRIPT)
   target: escodoo merged
   fetch_all: true
 
