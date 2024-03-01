@@ -2,63 +2,19 @@
 ./odoo:
   defaults:
     # Shallow repositories ($DEPTH_DEFAULT=1) are faster & thinner
-    # You may need a bigger depth when merging PRs (use $DEPTH_MERGE
+    # You may need a bigger depth when merging PRs (use 5000
     # for a sane value of 100 commits)
-    depth: $DEPTH_DEFAULT
+    depth: 5000
   remotes:
     ocb: https://github.com/OCA/OCB.git
     odoo: https://github.com/odoo/odoo.git
     openupgrade: https://github.com/OCA/OpenUpgrade.git
+    escodoo: https://github.com/Escodoo/OCB.git
   target: ocb $ODOO_VERSION
   merges:
     - ocb $ODOO_VERSION
-    # Example of a merge of the PR with the number <PR>
-    # - oca refs/pull/<PR>/head
-
-# OCA
-
-l10n-brazil:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    escodoo: https://github.com/Escodoo/l10n-brazil
-    origin: https://github.com/OCA/l10n-brazil
-  merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/1887/head # Escodoo:14.0-mig-l10n_br_fiscal_queue
-    - origin refs/pull/1928/head # Escodoo:14.0-fix-l10n_br_nfse-inscr-estadual-isenta
-    - origin refs/pull/2569/head # Escodoo:14.0-add-l10n_br_account_fleet
-    - origin refs/pull/2624/head # Escodoo:14.0-add-l10n_br_purchase_requisition
-    - origin refs/pull/2627/head # Escodoo:14.0-imp-fiscal-message-on-nfse
-    - origin refs/pull/2559/head # Engenere:14.0-imp-tax-manual-values
-    - origin refs/pull/2773/head # Escodoo:14.0-add-l10n_br_nfse_focus-escodoo
-    - origin refs/pull/2779/head # Escodoo:14.0-add-l10n_br_account_invoice_merge
-    - origin refs/pull/2845/head # Escodoo:14.0-imp-l10n_br_stock_account-enforce_fiscal_operation_line
-  target: origin merged
-  fetch_all: true
-
-account-financial-tools:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/OCA/account-financial-tools
-  merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/1802/head # Escodoo:14.0-add-account_asset_management_fleet
-  target: origin merged
-  fetch_all: true
-
-account-reconcile:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/OCA/account-reconcile
-  merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/459/head # Tecnativa:14.0-account_reconciliation_widget-in_payment
-  target: origin merged
-  fetch_all: true
-
+    - escodoo refs/pull/1/head # WEBSITE_SLIDES REMOVE PT_BR TRANSLATIONS
+    - escodoo refs/pull/2/head # ACCOUNT SET PASS IN MODEL (PROCESS MIGRATION SCRIPT)
 field-service:
   defaults:
     depth: $DEPTH_MERGE
@@ -67,68 +23,57 @@ field-service:
     escodoo: https://github.com/Escodoo/field-service
   merges:
     - origin $ODOO_VERSION
-    - escodoo 14.0-mig-fieldservice_rating
-    - escodoo 14.0-add-fieldservice_survey_new
+    - origin refs/pull/1155/head # FIELD SERVICE SURVEY
+  target: origin merged
+  fetch_all: true
+
+timesheet:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/timesheet
+    escodoo: https://github.com/Escodoo/timesheet
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/628/head # HR_TIMESHEET_SHEET_NO_CRETATE
+  target: origin merged
+  fetch_all: true
+
+l10n-brazil:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/l10n-brazil
+    escodoo: https://github.com/Escodoo/l10n-brazil
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/2429/head # L10N_BR_HR_CONTRACT
+    - escodoo refs/pull/57/head # REMOVE DUPLICATE CSV LINES IN L10N BR FISCAL (PROCESS MIGRATION SCRIPT)
+  target: origin merged
+  fetch_all: true
+
+odoo-usability:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/Akretion/odoo-usability
+    escodoo: https://github.com/Escodoo/odoo-usability
+  merges:
+    - origin $ODOO_VERSION
+    - escodoo refs/pull/1/head # ACCOUNT_USABILITY REMOVE SCRIPT MIGRATION TO IGNORE CONFLICT (PROCESS MIGRATION SCRIPT)
+    - escodoo refs/pull/2/head # PRODUCT_USABILITY SCRIPT TO REMOVE PRODUCT_REL NOT FOUND IN PRODUCT AND PRODUCT_TEMPLATE (PROCESS MIGRATION SCRIPT)
+    - escodoo refs/pull/3/head # SALE_USABILITY DISABLE ERROR CLIENT_ORDER_REF
   target: escodoo merged
   fetch_all: true
 
-# server-auth:
-#   defaults:
-#     depth: $DEPTH_MERGE
-#   remotes:
-#     origin: https://github.com/OCA/server-auth
-#   merges:
-#     - origin $ODOO_VERSION
-#     - origin refs/pull/606/head # Escodoo:14.0-imp-auth_admin_passkey
-#   target: origin merged
-#   fetch_all: true
-
-stock-logistics-warehouse:
+server-ux:
   defaults:
     depth: $DEPTH_MERGE
   remotes:
-    origin: https://github.com/OCA/stock-logistics-warehouse
+    origin: https://github.com/OCA/server-ux
+    escodoo: https://github.com/Escodoo/server-ux
   merges:
     - origin $ODOO_VERSION
-    # - origin refs/pull/1886/head # Escodoo:14.0-add-stock_request_purchase_request
-  target: origin merged
-  fetch_all: true
-
-storage:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/OCA/storage
-    escodoo: https://github.com/Escodoo/storage
-  merges:
-    - origin $ODOO_VERSION
-    - escodoo 14.0-mig-fs_storage
-    - escodoo 14.0-mig-fs_attachment
+    - escodoo refs/pull/2/head # BASE_TIER_VALIDATION REMOVE RAISE AND SET PASS (PROCESS MIGRATION SCRIPT)
   target: escodoo merged
-  fetch_all: true
-
-# Escodoo
-
-account-addons:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/Escodoo/account-addons
-  merges:
-    - origin $ODOO_VERSION
-    # - origin refs/pull/62/head # add analytic_restrictions
-    # - origin refs/pull/63/head # add sale_analytic_restrictions
-    # - origin refs/pull/64/head # add hr_timesheet_analytic_restrictions
-  target: origin merged
-  fetch_all: true
-
-server-addons:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/Escodoo/server-addons
-  merges:
-    - origin $ODOO_VERSION
-    - origin 14.0-add-base_ir_binary
-  target: origin merged
   fetch_all: true
