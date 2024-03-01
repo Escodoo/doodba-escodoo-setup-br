@@ -1,13 +1,55 @@
-account-analytic:
+OpenUpgrade:
   - "*"
 
-account-budgeting:
+account-payment:
   - "*"
 
 account-closing:
   - "*"
+  
+account-reconcile:
+  - "*"
+  
+dms:
+  - "*"
+  
+vertical-rental:
+  - "*"
+  
+manufacture:
+  - "*"
+  
+product-attribute:
+  - "*"
+ 
+product-pack:
+  - "*"
+  
+account-invoicing:
+  - "*"
 
-account-consolidation:
+bank-payment:
+  - "*"
+
+currency:
+  - "*"
+
+server-tools:
+  - "*"
+
+server-env:
+  - "*"
+
+server-ux:
+  - "*"
+  
+server-auth:
+  - "*"
+
+stock-logistics-workflow:
+  - "*"
+
+l10n-brazil:
   - "*"
 
 account-financial-reporting:
@@ -16,82 +58,76 @@ account-financial-reporting:
 account-financial-tools:
   - "*"
 
-account-invoice-reporting:
-  - "*"
-
-account-invoicing:
-  - "*"
-
-account-payment:
-  - "*"
-
-account-reconcile:
-  - "*"
-
-bank-payment:
-  - "*"
-
-bank-statement-import:
-  - "*"
-
-brand:
-  - "*"
-
-commission:
-  - "*"
-
-connector:
-  - "*"
-
-contract:
-  - "*"
-
-crm:
-  - "*"
-
-currency:
-  - "*"
-
-delivery-carrier:
-  - "*"
-
-dms:
-  - "*"
-
-e-commerce:
-  - "*"
-
-field-service:
-  - "*"
-
-fleet:
-  - "*"
-
-geospatial:
-  - "*"
-
-helpdesk:
-  - "*"
-
-hr:
-  - "*"
-
-hr-expense:
-  - "*"
-
-knowledge:
-  - "*"
-
-l10n-brazil:
+reporting-engine:
   - "*"
 
 maintenance:
   - "*"
 
+contract:
+  - "*"
+
 management-system:
   - "*"
 
-manufacture:
+knowledge:
+  - "*"
+
+crm:
+  - "*"
+
+field-service:
+  - "*"
+
+web: 
+  - "*"
+
+stock-logistics-warehouse:
+  - "*"
+
+partner-contact:
+  - "*"
+
+hr:
+  - "*"
+
+hr-attendance:
+  - "*"
+
+hr-expense:
+  - "*"
+
+hr-holidays:
+  - "*"
+
+geospatial:
+  - "*"
+
+account-invoice-reporting:
+  - "*"
+
+account-analytic:
+  - "*"
+
+account-invoicing:
+  - "*"
+  
+server-auth:
+  - "*"
+
+commission:
+  - "*"
+
+server-brand:
+  - "*"
+
+social:
+  - "*"
+
+purchase-workflow:
+  - "*"
+
+sale-workflow:
   - "*"
 
 mis-builder:
@@ -100,141 +136,79 @@ mis-builder:
 mis-builder-contrib:
   - "*"
 
-payroll:
-  - "*"
-
-partner-contact:
-  - "*"
-
-product-attribute:
-  - "*"
-
-product-variant:
-  - "*"
-
-project:
-  - "*"
-
-project-reporting:
-  - "*"
-
-purchase-workflow:
-  - "*"
-
-purchase-reporting:
-  - "*"
-
-queue:
-  - "*"
-
-reporting-engine:
-  - "*"
-
-rest-framework:
-  - "*"
-
-sale-reporting:
-  - "*"
-
-sale-workflow:
-  - "*"
-
-server-auth:
-  - "*"
-
-server-backend:
-  - "*"
-
-server-brand:
-  - "*"
-
-server-env:
-  - "*"
-
-server-tools:
-  - "*"
-
-server-ux:
-  - "*"
-
-sign:
-  - "*"
-
-social:
-  - "*"
-
-stock-logistics-warehouse:
-  - "*"
-
-stock-logistics-workflow:
-  - "*"
-
-stock-logistics-reporting:
-  - "*"
-
-storage:
-  - "*"
-
-survey:
+account-budgeting:
   - "*"
 
 timesheet:
   - "*"
 
-web:
+bank-statement-import:
   - "*"
 
-website:
+project:
+  - "*"
+
+connector-telephony:
+  - "*"
+
+helpdesk:
+  - "*"
+
+server-backend:
+  - "*"
+
+queue:
+  - "*"
+
+stock-logistics-transport:
+  - "*"
+
+payroll:
   - "*"
 
 ---
-# ATSTI Repositories
+# CybroOdoo REPO
 ENV:
-  DEFAULT_REPO_PATTERN: https://github.com/ATSTI/{}.git
-ats-odoo:
-  - l10n_br_sped_efd_contribuicoes
-  - l10n_br_sped_efd_icms_ipi
+  DEFAULT_REPO_PATTERN: https://github.com/CybroOdoo/{}.git
+openhrms:
+  - "*"
 
 ---
-# Engenere Repositories
-ENV:
-  DEFAULT_REPO_PATTERN: https://github.com/engenere/{}.git
-engenere-addons:
-  - engenere_danfe
-  - l10n_br_base_allows_duplicate_cnpj_ie
-  - l10n_br_nfse_paulistana_direct_print
-
----
-# Akretion Repositories
+# Akretion REPO
 ENV:
   DEFAULT_REPO_PATTERN: https://github.com/akretion/{}.git
+odoo-usability:
+  - "account_usability"
+  - "base_usability"
+  - "eradicate_quick_create"
+  - "partner_tree_default_base"
+  - "product_usability"
+  - "purchase_product_tree_default"
+  - "purchase_stock_usability"
+  - "purchase_usability"
+  - "sale_product_tree_default"
+  - "sale_stock_usability"
+  - "sale_usability"
+  - "stock_account_usability"
+  - "stock_product_tree_default"
+  - "stock_usability"
+
+odoo-viewer-groups:
+  - "*"
 account-move-import:
   - "*"
 
 ---
-# Odoo Repositories
+# Escodoo REPO
 ENV:
-  DEFAULT_REPO_PATTERN: https://github.com/odoo/{}.git
-design-themes:
+  DEFAULT_REPO_PATTERN: https://github.com/Escodoo/{}.git
+epa-addons:
   - "*"
-
----
-# Escodoo Repositories
-ENV:
-  DEFAULT_REPO_PATTERN: https://github.com/escodoo/{}.git
 account-addons:
-  - "*"
-base-addons:
-  - "*"
-crm-addons:
-  - "*"
-purchase-addons:
   - "*"
 sale-addons:
   - "*"
-project-addons:
-  - "*"
-server-addons:
-  - "*"
-setup-addons:
+purchase-addons:
+  - "*"   
+fieldservice-addons:
   - "*"
