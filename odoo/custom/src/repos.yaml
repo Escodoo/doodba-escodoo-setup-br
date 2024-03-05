@@ -89,3 +89,15 @@ manufacture:
     - escodoo 14.0-mig-quality_control_team_oca # Escodoo:14.0-mig-quality_control_team_oca
   target: origin merged
   fetch_all: true
+
+purchase-workflow:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/purchase-workflow
+    escodoo: https://github.com/Escodoo/purchase-workflow
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/2197/head # Escodoo:14.0-imp-purchase_request 
+  target: origin merged
+  fetch_all: true
