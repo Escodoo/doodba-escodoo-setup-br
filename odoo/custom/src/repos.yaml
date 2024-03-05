@@ -86,7 +86,7 @@ manufacture:
     escodoo: https://github.com/Escodoo/manufacture
   merges:
     - origin $ODOO_VERSION
-    - escodoo 14.0-mig-quality_control_team_oca # Escodoo:14.0-mig-quality_control_team_oca
+    # - escodoo 14.0-mig-quality_control_team_oca # Escodoo:14.0-mig-quality_control_team_oca
   target: origin merged
   fetch_all: true
 
