@@ -94,6 +94,9 @@ management-system:
 manufacture:
   - "*"
 
+manufacture-reporting:
+  - "*"
+
 mis-builder:
   - "*"
 
