@@ -106,20 +106,6 @@ account-reconcile:
 #  target: escodoo merged
 #  fetch_all: true
 
-# Escodoo
-account-addons:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/Escodoo/account-addons
-  merges:
-    - origin $ODOO_VERSION
-    # - origin refs/pull/62/head # add analytic_restrictions
-    # - origin refs/pull/63/head # add sale_analytic_restrictions
-    # - origin refs/pull/64/head # add hr_timesheet_analytic_restrictions
-  target: origin merged
-  fetch_all: true
-
 #server-addons:
 #  defaults:
 #    depth: $DEPTH_MERGE
