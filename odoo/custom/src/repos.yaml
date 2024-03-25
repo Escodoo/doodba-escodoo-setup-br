@@ -13,8 +13,9 @@
   target: ocb $ODOO_VERSION
   merges:
     - ocb $ODOO_VERSION
-    - escodoo refs/pull/1/head # WEBSITE_SLIDES REMOVE PT_BR TRANSLATIONS
+    - escodoo 14.0-hack-website_slides # WEBSITE_SLIDES REMOVE PT_BR TRANSLATIONS
     # - escodoo refs/pull/2/head # ACCOUNT SET PASS IN MODEL (PROCESS MIGRATION SCRIPT)
+
 field-service:
   defaults:
     depth: $DEPTH_MERGE
