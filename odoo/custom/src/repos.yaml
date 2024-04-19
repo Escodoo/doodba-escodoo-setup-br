@@ -12,7 +12,7 @@
     escodoo: https://github.com/Escodoo/OCB.git
   target: ocb $ODOO_VERSION
   merges:
-    - ocb $ODOO_VERSION
+    # - ocb $ODOO_VERSION
     - escodoo 14.0-hack-website_slides # WEBSITE_SLIDES REMOVE PT_BR TRANSLATIONS
     # - escodoo refs/pull/2/head # ACCOUNT SET PASS IN MODEL (PROCESS MIGRATION SCRIPT)
 
@@ -49,7 +49,6 @@ l10n-brazil:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/2429/head # L10N_BR_HR_CONTRACT
-    - origin refs/pull/2997/head # Escodoo:14.0-l10n_br_account-create_wh_invoice
     # - escodoo refs/pull/57/head # REMOVE DUPLICATE CSV LINES IN L10N BR FISCAL (PROCESS MIGRATION SCRIPT)
   target: origin merged
   fetch_all: true
