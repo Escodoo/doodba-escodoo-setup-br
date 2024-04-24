@@ -90,6 +90,18 @@ manufacture:
     # - escodoo 14.0-mig-quality_control_team_oca # Escodoo:14.0-mig-quality_control_team_oca
   target: origin merged
   fetch_all: true
+  
+bank-payment:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/bank-payment
+    escodoo: https://github.com/Escodoo/bank-payment
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/1253/head # Escodoo:14.0-add-account_payment_order_restriction_account_move
+  target: escodoo merged
+  fetch_all: true  
 
 # purchase-workflow:
 #   defaults:
