@@ -16,17 +16,17 @@
     - escodoo 14.0-hack-website_slides # WEBSITE_SLIDES REMOVE PT_BR TRANSLATIONS
     # - escodoo refs/pull/2/head # ACCOUNT SET PASS IN MODEL (PROCESS MIGRATION SCRIPT)
 
-field-service:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/OCA/field-service
-    escodoo: https://github.com/Escodoo/field-service
-  merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/1155/head # FIELD SERVICE SURVEY
-  target: origin merged
-  fetch_all: true
+# field-service:
+#   defaults:
+#     depth: $DEPTH_MERGE
+#   remotes:
+#     origin: https://github.com/OCA/field-service
+#     escodoo: https://github.com/Escodoo/field-service
+#   merges:
+#     - origin $ODOO_VERSION
+#     - origin refs/pull/1155/head # FIELD SERVICE SURVEY
+#   target: origin merged
+#   fetch_all: true
 
 timesheet:
   defaults:
