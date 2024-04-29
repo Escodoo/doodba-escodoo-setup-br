@@ -206,9 +206,13 @@ epa-addons:
   - "*"
 account-addons:
   - "*"
+base-addons:
+  - "*"
 sale-addons:
   - "*"
 purchase-addons:
   - "*"   
 fieldservice-addons:
+  - "*"
+server-addons:
   - "*"
