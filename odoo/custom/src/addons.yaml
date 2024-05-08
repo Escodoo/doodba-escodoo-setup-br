@@ -245,14 +245,6 @@ website:
   - "*"
 
 ---
-# ATSTI Repositories
-ENV:
-  DEFAULT_REPO_PATTERN: https://github.com/ATSTI/{}.git
-ats-odoo:
-  - l10n_br_sped_efd_contribuicoes
-  - l10n_br_sped_efd_icms_ipi
-
----
 # Engenere Repositories
 ENV:
   DEFAULT_REPO_PATTERN: https://github.com/engenere/{}.git
