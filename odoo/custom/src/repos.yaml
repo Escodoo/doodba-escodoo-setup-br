@@ -29,10 +29,21 @@ l10n-brazil:
     - origin refs/pull/2569/head # Escodoo:14.0-add-l10n_br_account_fleet
     - origin refs/pull/2624/head # Escodoo:14.0-add-l10n_br_purchase_requisition
     - origin refs/pull/2627/head # Escodoo:14.0-imp-fiscal-message-on-nfse
-    # - origin refs/pull/2559/head # Engenere:14.0-imp-tax-manual-values
-    - origin refs/pull/2773/head # Escodoo:14.0-add-l10n_br_nfse_focus-escodoo
     # - origin refs/pull/2779/head # Escodoo:14.0-add-l10n_br_account_invoice_merge
     - origin refs/pull/2845/head # Escodoo:14.0-imp-l10n_br_stock_account-enforce_fiscal_operation_line
+    - origin refs/pull/3037/head # Escodoo:14.0-l10n_br_account-fix-price_total-and-price_subtotal-account_move_line
+  target: origin merged
+  fetch_all: true
+
+account-financial-reporting:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/account-financial-reporting
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/1165/head # Escodoo:14.0-account_financial_report-imp-general-ledger-account-range
+    - origin refs/pull/1166/head # Escodoo:14.0-account_financial_report-imp-general-ledger-filter-by-account-types
   target: origin merged
   fetch_all: true
   
@@ -52,12 +63,26 @@ account-reconcile:
     depth: $DEPTH_MERGE
   remotes:
     origin: https://github.com/OCA/account-reconcile
+    escodoo: https://github.com/Escodoo/account-reconcile
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/459/head # Tecnativa:14.0-account_reconciliation_widget-in_payment
+    # - origin refs/pull/459/head # Tecnativa:14.0-account_reconciliation_widget-in_payment
+    - escodoo 14.0-account_reconcilation_widget-in_payment-escodoo
   target: origin merged
   fetch_all: true
 
+bank-payment:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/bank-payment
+    escodoo: https://github.com/Escodoo/bank-payment 
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/1253/head # Escodoo:14.0-add-account_payment_order_restriction_account_move
+  target: escodoo merged
+  fetch_all: true
+  
 # Escodoo
 setup-addons:
   defaults:
