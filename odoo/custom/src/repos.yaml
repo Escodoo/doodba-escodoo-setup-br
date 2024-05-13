@@ -62,6 +62,7 @@ l10n-brazil:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/2429/head # L10N_BR_HR_CONTRACT
+    - origin refs/pull/3076/head # fix fiscal_documento_line
     # - escodoo refs/pull/57/head # REMOVE DUPLICATE CSV LINES IN L10N BR FISCAL (PROCESS MIGRATION SCRIPT)
   target: origin merged
   fetch_all: true
