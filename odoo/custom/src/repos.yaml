@@ -18,7 +18,7 @@
 # OCA
 l10n-brazil:
   defaults:
-    depth: $DEPTH_MERGE
+    depth: 2000
   remotes:
     escodoo: https://github.com/Escodoo/l10n-brazil
     origin: https://github.com/OCA/l10n-brazil
