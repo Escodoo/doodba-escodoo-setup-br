@@ -31,7 +31,7 @@ l10n-brazil:
     - origin refs/pull/2627/head # Escodoo:14.0-imp-fiscal-message-on-nfse
     # - origin refs/pull/2779/head # Escodoo:14.0-add-l10n_br_account_invoice_merge
     - origin refs/pull/2845/head # Escodoo:14.0-imp-l10n_br_stock_account-enforce_fiscal_operation_line
-    - origin refs/pull/3037/head # Escodoo:14.0-l10n_br_account-fix-price_total-and-price_subtotal-account_move_line
+    # - origin refs/pull/3037/head # Escodoo:14.0-l10n_br_account-fix-price_total-and-price_subtotal-account_move_line
     - escodoo ak-14.0-l10n-br-account-fix-fiscal-document-line-NEW2
   target: origin merged
   fetch_all: true
