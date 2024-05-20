@@ -83,3 +83,15 @@ l10n-brazil:
 #     - origin refs/pull/1253/head # Escodoo:14.0-add-account_payment_order_restriction_account_move
 #   target: escodoo merged
 #   fetch_all: true 
+
+project-addons:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/Escodoo/bank-payment
+  merges:
+    - origin $ODOO_VERSION
+    - origin 14.0-add-project-phase-addon
+  target: origin merged
+  fetch_all: true
+  
