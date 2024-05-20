@@ -90,7 +90,7 @@ project-addons:
   remotes:
     origin: https://github.com/Escodoo/project-addons
   merges:
-    - origin $ODOO_VERSION
+    # - origin $ODOO_VERSION
     - origin 14.0-add-project-phase-addon
   target: origin merged
   fetch_all: true
