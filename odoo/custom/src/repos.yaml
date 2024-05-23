@@ -34,17 +34,17 @@ l10n-brazil:
   target: origin merged
   fetch_all: true
 
-account-financial-reporting:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/OCA/account-financial-reporting
-  merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/1165/head # Escodoo:14.0-account_financial_report-imp-general-ledger-account-range
-    - origin refs/pull/1166/head # Escodoo:14.0-account_financial_report-imp-general-ledger-filter-by-account-types
-  target: origin merged
-  fetch_all: true
+# account-financial-reporting:
+#   defaults:
+#     depth: $DEPTH_MERGE
+#   remotes:
+#     origin: https://github.com/OCA/account-financial-reporting
+#   merges:
+#     - origin $ODOO_VERSION
+#     - origin refs/pull/1165/head # Escodoo:14.0-account_financial_report-imp-general-ledger-account-range
+#     - origin refs/pull/1166/head # Escodoo:14.0-account_financial_report-imp-general-ledger-filter-by-account-types
+#   target: origin merged
+#   fetch_all: true
   
 account-financial-tools:
   defaults:
