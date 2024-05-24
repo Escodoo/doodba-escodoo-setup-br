@@ -83,6 +83,19 @@ account-reconcile:
 #   target: escodoo merged
 #   fetch_all: true
 
+manufacture:
+ defaults:
+   depth: $DEPTH_MERGE
+ remotes:
+      origin: https://github.com/OCA/manufacture
+      escodoo: https://github.com/Escodoo/manufacture
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/1052/head # Escodoo:14.0-mig-mrp_mto_with_stock
+ target: escodoo merged
+ fetch_all: true    
+
+# Akretion
 account-move-import:
  defaults:
    depth: $DEPTH_MERGE
