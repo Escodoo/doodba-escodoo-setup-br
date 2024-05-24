@@ -231,5 +231,6 @@ project-addons:
   - "*"
 server-addons:
   - "*"
-setup-addons:
+
+poppi-addons:
   - "*"
