@@ -84,26 +84,27 @@ account-reconcile:
 #   fetch_all: true
 
 manufacture:
- defaults:
-   depth: 2000
- remotes:
+  defaults:
+    depth: 2000
+  remotes:
     origin: https://github.com/OCA/manufacture
     escodoo: https://github.com/Escodoo/manufacture
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/1052/head # Escodoo:14.0-mig-mrp_mto_with_stock
- target: escodoo merged
- fetch_all: true
+  target: escodoo merged
+  fetch_all: true
 
 # Akretion
 account-move-import:
- defaults:
-   depth: $DEPTH_MERGE
- remotes:
-   origin: https://github.com/akretion/account-move-import
-   escodoo: https://github.com/Escodoo/account-move-import
- merges:
-   - origin $ODOO_VERSION
-   - escodoo 14.0-imp-account_move_csv_import # date_maturity in CSV and XLSX
- target: escodoo merged
- fetch_all: true
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/akretion/account-move-import
+    escodoo: https://github.com/Escodoo/account-move-import
+  merges:
+    - origin $ODOO_VERSION
+    - escodoo 14.0-imp-account_move_csv_import # date_maturity in CSV and XLSX
+  target: escodoo merged
+  fetch_all: true
+
