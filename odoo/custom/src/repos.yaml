@@ -30,6 +30,7 @@ l10n-brazil:
     - origin refs/pull/2624/head # Escodoo:14.0-add-l10n_br_purchase_requisition
     - origin refs/pull/2627/head # Escodoo:14.0-imp-fiscal-message-on-nfse
     # - origin refs/pull/2779/head # Escodoo:14.0-add-l10n_br_account_invoice_merge
+    # - escodoo 14.0-imp-tax-manual-values # Engenere:14.0-imp-tax-manual-values
     - origin refs/pull/2845/head # Escodoo:14.0-imp-l10n_br_stock_account-enforce_fiscal_operation_line
   target: origin merged
   fetch_all: true
@@ -70,15 +71,15 @@ account-reconcile:
   target: origin merged
   fetch_all: true
 
-bank-payment:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/OCA/bank-payment
-    escodoo: https://github.com/Escodoo/bank-payment 
-  merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/1253/head # Escodoo:14.0-add-account_payment_order_restriction_account_move
-  target: escodoo merged
-  fetch_all: true
+# bank-payment:
+#   defaults:
+#     depth: $DEPTH_MERGE
+#   remotes:
+#     origin: https://github.com/OCA/bank-payment
+#     escodoo: https://github.com/Escodoo/bank-payment 
+#   merges:
+#     - origin $ODOO_VERSION
+#     - origin refs/pull/1253/head # Escodoo:14.0-add-account_payment_order_restriction_account_move
+#   target: escodoo merged
+#   fetch_all: true
   
