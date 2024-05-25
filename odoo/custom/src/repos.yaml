@@ -108,3 +108,15 @@ account-move-import:
     - escodoo 14.0-imp-account_move_csv_import # date_maturity in CSV and XLSX
   target: escodoo merged
   fetch_all: true
+
+# Escodoo
+account-addons:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/Escodoo/account-addons
+  merges:
+    - origin $ODOO_VERSION
+    - escodoo refs/pull/72/head # 14.0-add-cnab_structure_payment_santander_240
+  target: origin merged
+  fetch_all: true
