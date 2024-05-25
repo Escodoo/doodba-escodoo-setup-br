@@ -24,7 +24,7 @@ l10n-brazil:
     origin: https://github.com/OCA/l10n-brazil
   merges:
     - origin $ODOO_VERSION
-    # - origin refs/pull/1887/head # Escodoo:14.0-mig-l10n_br_fiscal_queue
+    - origin refs/pull/1887/head # Escodoo:14.0-mig-l10n_br_fiscal_queue
     # - origin refs/pull/1928/head # Escodoo:14.0-fix-l10n_br_nfse-inscr-estadual-isenta
     - origin refs/pull/2569/head # Escodoo:14.0-add-l10n_br_account_fleet
     - origin refs/pull/2624/head # Escodoo:14.0-add-l10n_br_purchase_requisition
@@ -32,6 +32,7 @@ l10n-brazil:
     # - origin refs/pull/2779/head # Escodoo:14.0-add-l10n_br_account_invoice_merge
     - escodoo 14.0-imp-tax-manual-values # Engenere:14.0-imp-tax-manual-values
     - origin refs/pull/2845/head # Escodoo:14.0-imp-l10n_br_stock_account-enforce_fiscal_operation_line
+    - escodoo 14.0-ak-sped-hack-poppi
   target: origin merged
   fetch_all: true
 
@@ -107,4 +108,3 @@ account-move-import:
     - escodoo 14.0-imp-account_move_csv_import # date_maturity in CSV and XLSX
   target: escodoo merged
   fetch_all: true
-
