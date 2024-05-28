@@ -84,6 +84,18 @@ l10n-brazil:
 #   target: escodoo merged
 #   fetch_all: true 
 
+helpdesk:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/helpdesk
+    escodoo: https://github.com/Escodoo/helpdesk
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/578/head # Escodoo:14.0-helpdesk_mgmt-change-portal_my_home-priority
+  target: origin merged
+  fetch_all: true
+
 project-addons:
   defaults:
     depth: $DEPTH_MERGE
