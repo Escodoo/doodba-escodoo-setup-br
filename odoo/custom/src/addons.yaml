@@ -166,6 +166,9 @@ sign:
 social:
   - "*"
 
+spreadsheet:
+  - "*"
+  
 stock-logistics-warehouse:
   - "*"
 
