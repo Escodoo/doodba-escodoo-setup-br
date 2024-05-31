@@ -80,7 +80,7 @@ josepy
 odoorpc
 openpyxl
 pygount
-pysftp
+# pysftp
 sentry_sdk<=1.9.0
 
 # oca/geospatial
