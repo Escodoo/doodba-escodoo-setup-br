@@ -16,7 +16,7 @@ nfselib.paulistana
 num2words
 phonenumbers
 pyyaml
-satcomum
+# satcomum
 unidecode
 workalendar
 
@@ -24,10 +24,9 @@ workalendar
 # cryptography>=41.0.2
 # signxml<3.1.0
 # pyOpenSSL>=23.2.0
-pytz==2023.3
+pytz
 pdfminer.six
 psycopg2-binary
-git+https://github.com/ATSTI/python-sped
 xmldiff
 ofx
 
@@ -41,48 +40,48 @@ ofxparse
 xlrd
 
 # oca/res-framework
-a2wsgi
-apispec>=4.0.0
-cerberus
-extendable-pydantic
-extendable-pydantic>=0.0.4
-extendable>=0.0.4
-fastapi
-graphene
-graphql_server
-jsondiff
-marshmallow
-marshmallow-objects>=2.0.0
-parse-accept-language
-pydantic<2
-pyquerystring
-python-multipart
-typing-extensions
-ujson
+# a2wsgi
+# apispec>=4.0.0
+# cerberus
+# extendable-pydantic
+# extendable-pydantic>=0.0.4
+# extendable>=0.0.4
+# fastapi
+# graphene
+# graphql_server
+# jsondiff
+# marshmallow
+# marshmallow-objects>=2.0.0
+# parse-accept-language
+# pydantic<2
+# pyquerystring
+# python-multipart
+# typing-extensions
+# ujson
 
 # oca/field-service
 webcolors
 
 # oca/server-auth
-pyjwt
-pysaml2
-python-jose
-python-ldap
-zxcvbn
+# pyjwt
+# pysaml2
+# python-jose
+# python-ldap
+# zxcvbn
 
 # oca/server-tools
 # generated from manifests external_dependencies
-acme
-astor
-contextvars; python_version < '3.7'
-dataclasses
-dnspython
-josepy
-odoorpc
-openpyxl
-pygount
-pysftp
-sentry_sdk<=1.9.0
+# acme
+# astor
+# contextvars; python_version < '3.7'
+# dataclasses
+# dnspython
+# josepy
+# odoorpc
+# openpyxl
+# pygount
+# pysftp # instala o cryptografy versao antiga
+# sentry_sdk<=1.9.0
 
 # oca/geospatial
 geojson
@@ -91,6 +90,15 @@ simplejson
 
 # oca/connector
 cachetools
+
+# oca/social
+cairosvg
+#cryptography<37
+# extract_msg
+lottie
+# premailer
+python-telegram-bot
+requests_toolbelt
 
 # oca/storage
 #botocore>=1.33.2
