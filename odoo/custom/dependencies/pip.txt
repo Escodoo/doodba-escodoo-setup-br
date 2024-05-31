@@ -78,7 +78,7 @@ webcolors
 # dnspython
 # josepy
 # odoorpc
-# openpyxl
+openpyxl # used by account_move_csv_import
 # pygount
 # pysftp # instala o cryptografy versao antiga
 # sentry_sdk<=1.9.0
