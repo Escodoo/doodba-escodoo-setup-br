@@ -4,12 +4,6 @@ account-analytic:
 account-budgeting:
   - "*"
 
-account-closing:
-  - "*"
-
-account-consolidation:
-  - "*"
-
 account-financial-reporting:
   - "*"
 
@@ -55,9 +49,6 @@ currency:
 delivery-carrier:
   - "*"
 
-dms:
-  - "*"
-
 e-commerce:
   - "*"
 
@@ -94,16 +85,10 @@ management-system:
 manufacture:
   - "*"
 
-manufacture-reporting:
-  - "*"
-
 mis-builder:
   - "*"
 
 mis-builder-contrib:
-  - "*"
-
-payroll:
   - "*"
 
 partner-contact:
@@ -118,13 +103,7 @@ product-variant:
 project:
   - "*"
 
-project-reporting:
-  - "*"
-
 purchase-workflow:
-  - "*"
-
-purchase-reporting:
   - "*"
 
 queue:
@@ -160,9 +139,6 @@ server-tools:
 server-ux:
   - "*"
 
-sign:
-  - "*"
-
 social:
   - "*"
 
@@ -170,15 +146,6 @@ stock-logistics-warehouse:
   - "*"
 
 stock-logistics-workflow:
-  - "*"
-
-stock-logistics-reporting:
-  - "*"
-
-storage:
-  - "*"
-
-survey:
   - "*"
 
 timesheet:
@@ -198,6 +165,7 @@ engenere-addons:
   - engenere_danfe
   - l10n_br_base_allows_duplicate_cnpj_ie
   - l10n_br_nfse_paulistana_direct_print
+  - l10n_br_trade_import
 
 ---
 # Akretion Repositories
@@ -221,15 +189,11 @@ account-addons:
   - "*"
 base-addons:
   - "*"
-crm-addons:
-  - "*"
 purchase-addons:
   - "*"
 sale-addons:
   - "*"
-project-addons:
-  - "*"
-server-addons:
-  - "*"
-setup-addons:
+
+# Escodoo Customer Repositories
+egd-addons:
   - "*"
