@@ -93,6 +93,7 @@ helpdesk:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/578/head # Escodoo:14.0-helpdesk_mgmt-change-portal_my_home-priority
+    - origin refs/pull/587/head # Escodoo:14.0-helpdesk_mgmt-fix-customer-image-portal
   target: origin merged
   fetch_all: true
 
