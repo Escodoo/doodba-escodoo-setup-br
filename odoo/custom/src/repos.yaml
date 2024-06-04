@@ -24,7 +24,6 @@ account-financial-reporting:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/1165/head # Escodoo:14.0-account_financial_report-imp-general-ledger-account-range
-    - origin refs/pull/1166/head # Escodoo:14.0-account_financial_report-imp-general-ledger-filter-by-account-types
   target: origin merged
   fetch_all: true
 
@@ -55,7 +54,7 @@ timesheet:
 
 l10n-brazil:
   defaults:
-    depth: $DEPTH_MERGE
+    depth: 2000
   remotes:
     origin: https://github.com/OCA/l10n-brazil
     escodoo: https://github.com/Escodoo/l10n-brazil
