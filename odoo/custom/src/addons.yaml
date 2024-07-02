@@ -202,12 +202,12 @@ website:
 #   - l10n_br_base_allows_duplicate_cnpj_ie
 #   - l10n_br_nfse_paulistana_direct_print
 
----
-# Akretion Repositories
-ENV:
-  DEFAULT_REPO_PATTERN: https://github.com/akretion/{}.git
-account-move-import:
-  - "*"
+# ---
+# # Akretion Repositories
+# ENV:
+#   DEFAULT_REPO_PATTERN: https://github.com/akretion/{}.git
+# account-move-import:
+#   - "*"
 
 ---
 # Odoo Repositories
@@ -215,6 +215,14 @@ ENV:
   DEFAULT_REPO_PATTERN: https://github.com/odoo/{}.git
 design-themes:
   - "*"
+
+
+---
+# Ursais Repositories
+ENV:
+  DEFAULT_REPO_PATTERN: https://github.com/ursais/stock-logistics-transport.git
+stock-logistics-transport-jarsa:
+ - "*"
 
 # ---
 # # Escodoo Repositories
