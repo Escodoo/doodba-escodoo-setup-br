@@ -96,3 +96,15 @@ l10n-brazil:
 #  target: escodoo merged
 #  fetch_all: true
  
+stock-logistics-transport-jarsa:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/stock-logistics-transport
+    escodoo: https://github.com/Escodoo/stock-logistics-transport
+    ursais: https://github.com/ursais/stock-logistics-transport
+  merges:
+    #- origin $ODOO_VERSION
+    - ursais 15.0-jarsa
+  target: escodoo merged
+  fetch_all: true
