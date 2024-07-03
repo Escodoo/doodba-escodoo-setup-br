@@ -103,3 +103,15 @@ account-move-import:
    - escodoo 14.0-imp-account_move_csv_import # date_maturity in CSV and XLSX
  target: escodoo merged
  fetch_all: true
+
+stock-logistics-warehouse:
+ defaults:
+   depth: $DEPTH_MERGE
+ remotes:
+   origin: https://github.com/oca/stock-logistics-warehouse
+   escodoo: https://github.com/Escodoo/stock-logistics-warehouse
+ merges:
+   - origin $ODOO_VERSION
+   - origin refs/pull/2095/head # FIX compute_state in SRO module stock_request related tier.validation
+ target: escodoo merged
+ fetch_all: true
