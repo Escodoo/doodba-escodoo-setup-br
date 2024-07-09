@@ -33,6 +33,8 @@ l10n-brazil:
     - escodoo 14.0-imp-tax-manual-values # Engenere:14.0-imp-tax-manual-values
     - origin refs/pull/2845/head # Escodoo:14.0-imp-l10n_br_stock_account-enforce_fiscal_operation_line
     - escodoo 14.0-ak-sped-hack-poppi
+    - origin refs/pull/3109/head # Engenere:14.0-fix-fiscal-product-value
+    - origin refs/pull/3135/head # kmee:fix/14.0-nfse-price-gross    
   target: origin merged
   fetch_all: true
 
