@@ -28,7 +28,7 @@ l10n-brazil:
     - origin refs/pull/2779/head # Escodoo:14.0-add-l10n_br_account_invoice_merge
     - escodoo 14.0-imp-tax-manual-values
     - origin refs/pull/2845/head # Escodoo:14.0-imp-l10n_br_stock_account-enforce_fiscal_operation_line
-    - origin refs/pull/3084/head # Escodoo:14.0-fix-l10n_br_nfse_focus
+    - origin refs/pull/3175/head # Escodoo:14.0-l10n_br_nfse_focus-fix-pdf-and-transmissao-franca    
   remotes:
     escodoo: https://github.com/Escodoo/l10n-brazil
     origin: https://github.com/OCA/l10n-brazil
