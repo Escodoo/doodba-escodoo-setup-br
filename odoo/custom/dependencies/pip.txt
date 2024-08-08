@@ -1,8 +1,9 @@
 git+https://github.com/OCA/openupgradelib.git@master
 unicodecsv
 
-#l10n-brazil
+# generated from manifests external_dependencies
 brazilcep
+brazilfiscalreport
 email-validator
 erpbrasil.assinatura>=1.7.0
 erpbrasil.base>=2.3.0
@@ -24,7 +25,7 @@ workalendar
 cryptography>=41.0.2
 signxml<3.1.0
 pyOpenSSL>=23.2.0
-pytz==2023.3
+pytz==2024.1
 pdfminer.six
 psycopg2-binary
 xmldiff
