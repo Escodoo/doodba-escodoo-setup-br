@@ -26,6 +26,7 @@ l10n-brazil:
     - origin $ODOO_VERSION
     # - origin refs/pull/1887/head # Escodoo:14.0-mig-l10n_br_fiscal_queue
     - origin refs/pull/1928/head # Escodoo:14.0-fix-l10n_br_nfse-inscr-estadual-isenta
+    - origin refs/pull/2429/head # kaynnan:14.0-mig-l10n_br_hr_contract
     - origin refs/pull/2569/head # Escodoo:14.0-add-l10n_br_account_fleet
     - origin refs/pull/2624/head # Escodoo:14.0-add-l10n_br_purchase_requisition
     - origin refs/pull/2627/head # Escodoo:14.0-imp-fiscal-message-on-nfse
@@ -55,19 +56,6 @@ account-financial-tools:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/1802/head # Escodoo:14.0-add-account_asset_management_fleet
-  target: origin merged
-  fetch_all: true
-
-account-reconcile:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/OCA/account-reconcile
-    escodoo: https://github.com/Escodoo/account-reconcile
-  merges:
-    - origin $ODOO_VERSION
-    # - origin refs/pull/459/head # Tecnativa:14.0-account_reconciliation_widget-in_payment
-    - escodoo 14.0-account_reconcilation_widget-in_payment-escodoo
   target: origin merged
   fetch_all: true
 
