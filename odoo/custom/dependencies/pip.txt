@@ -22,11 +22,11 @@ unidecode
 workalendar
 
 # others
-cryptography>=41.0.2
-signxml<3.1.0
-pyOpenSSL>=23.2.0
-pytz==2024.1
-pdfminer.six
+# cryptography>=41.0.2
+# signxml<3.1.0
+# pyOpenSSL>=23.2.0
+# pytz==2024.1
+#pdfminer.six
 psycopg2-binary
 xmldiff
 ofx
@@ -41,7 +41,9 @@ ofxparse
 xlrd
 
 # oca/res-framework
+# generated from manifests external_dependencies
 a2wsgi
+apispec
 apispec>=4.0.0
 cerberus
 extendable-pydantic
@@ -93,7 +95,7 @@ simplejson
 cachetools
 
 # oca/storage
-#botocore>=1.33.2
+botocore>=1.33.2
 s3fs>=0.5
 fsspec[abfs]
 
