@@ -25,7 +25,6 @@ l10n-brazil:
   merges:
     - origin $ODOO_VERSION
     # - origin refs/pull/1887/head # Escodoo:14.0-mig-l10n_br_fiscal_queue
-    # - origin refs/pull/1928/head # Escodoo:14.0-fix-l10n_br_nfse-inscr-estadual-isenta
     # - escodoo 14.0-imp-tax-manual-values # Engenere:14.0-imp-tax-manual-values
     # - origin refs/pull/2779/head # Escodoo:14.0-add-l10n_br_account_invoice_merge
     # - origin refs/pull/2429/head # kaynnan:14.0-mig-l10n_br_hr_contract
