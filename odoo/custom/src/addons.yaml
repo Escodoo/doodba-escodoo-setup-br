@@ -103,6 +103,9 @@ mis-builder:
 mis-builder-contrib:
   - "*"
 
+multi-company:
+  - "*"
+
 payroll:
   - "*"
 
