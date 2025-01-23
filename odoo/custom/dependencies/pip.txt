@@ -24,7 +24,7 @@ workalendar
 # others
 # cryptography>=41.0.2
 signxml<3.1.0
-pyOpenSSL==22.0.1
+pyOpenSSL==22.1.0
 pytz
 #pdfminer.six
 psycopg2-binary
