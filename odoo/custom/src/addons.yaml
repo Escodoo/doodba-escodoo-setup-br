@@ -37,6 +37,9 @@ bank-statement-import:
 brand:
   - "*"
 
+calendar:
+  - "*"
+
 commission:
   - "*"
 
