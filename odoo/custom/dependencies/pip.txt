@@ -19,8 +19,8 @@ workalendar
 
 # others
 # cryptography>=41.0.2
-# signxml<3.1.0
-# pyOpenSSL>=23.2.0
+signxml<3.1.0
+pyopenssl==22.1.0
 pytz
 pdfminer.six
 psycopg2-binary
@@ -90,7 +90,6 @@ cachetools
 
 # oca/social
 cairosvg
-#cryptography<37
 # extract_msg
 lottie
 # premailer
@@ -99,8 +98,8 @@ requests_toolbelt
 
 # oca/storage
 #botocore>=1.33.2
-s3fs>=0.5
-fsspec[abfs]
+#s3fs>=0.5
+#fsspec[abfs]
 
 # others - verificar
 python_slugify
