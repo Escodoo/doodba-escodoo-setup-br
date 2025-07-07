@@ -142,6 +142,9 @@ reporting-engine:
 rest-framework:
   - "*"
 
+rma:
+  - "*"
+
 sale-reporting:
   - "*"
 
