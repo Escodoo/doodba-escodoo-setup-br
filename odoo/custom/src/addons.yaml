@@ -28,6 +28,9 @@ account-payment:
 account-reconcile:
   - "*"
 
+ai:
+  - "*"
+
 automation:
   - "*"
 
