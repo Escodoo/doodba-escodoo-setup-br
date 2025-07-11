@@ -28,6 +28,9 @@ account-payment:
 account-reconcile:
   - "*"
 
+ai:
+  - "*"
+
 automation:
   - "*"
 
@@ -182,6 +185,9 @@ stock-logistics-warehouse:
   - "*"
 
 stock-logistics-workflow:
+  - "*"
+
+stock-logistics-request:
   - "*"
 
 stock-logistics-reporting:
