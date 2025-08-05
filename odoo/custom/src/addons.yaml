@@ -193,6 +193,9 @@ stock-logistics-workflow:
 stock-logistics-reporting:
   - "*"
 
+stock-logistics-request:
+  - "*"
+  
 storage:
   - "*"
 
