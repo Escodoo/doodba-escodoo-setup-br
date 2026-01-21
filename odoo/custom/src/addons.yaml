@@ -184,6 +184,9 @@ social:
 
 spreadsheet:
   - "*"
+
+stock-logistics-orderpoint:
+  - "*"
   
 stock-logistics-warehouse:
   - "*"
@@ -210,6 +213,9 @@ web:
   - "*"
 
 website:
+  - "*"
+
+wms:
   - "*"
 
 ---
