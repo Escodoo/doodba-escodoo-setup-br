@@ -202,6 +202,9 @@ stock-logistics-request:
 stock-logistics-reporting:
   - "*"
 
+stock-logistics-transport:
+  - "*"
+
 storage:
   - "*"
 
