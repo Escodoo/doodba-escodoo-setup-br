@@ -209,6 +209,9 @@ survey:
 timesheet:
   - "*"
 
+vertical-rental:
+  - "*"
+
 web:
   - "*"
 
